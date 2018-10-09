@@ -1,0 +1,7 @@
+printf("A:-\n");
+for(int i=1;i<=p;i++)  //p is product of row and column
+{
+printf("%d  ",a[i-1]);
+if((i%b)==0)           //b is number of columns
+{printf("\n");}
+}
