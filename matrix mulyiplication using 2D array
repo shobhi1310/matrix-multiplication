@@ -1,0 +1,65 @@
+#include<stdio.h>
+
+int main(void)
+{
+int a;
+int b;
+int c;
+int d;
+
+
+
+scanf("%d%d%d%d",&a,&b,&c,&d);
+
+if(b==c)
+{
+
+int A[a][b];
+int B[b][d];
+int C[a][d];
+
+for(int i=0;i<a;i++)
+{for(int j=0;j<b;j++)
+{scanf("%d",&A[i][j]); }}
+
+for(int k=0;k<c;k++)
+{for(int l=0;l<d;l++)
+{scanf("%d",&B[k][l]); }}
+
+puts("A:-");
+for(int i=0;i<a;i++)
+  {
+   for(int j=0;j<b;j++)
+    {printf("%d ",A[i][j]);}
+    printf("\n");
+}
+
+puts("B:-");
+for(int k=0;k<a;k++)
+  {
+   for(int l=0;l<b;l++)
+    {printf("%d ",A[k][l]);}
+    printf("\n");
+}
+
+for(int i=0;i<a;i++)
+ {for(int l=0;l<d;l++)
+  {int S = 0;
+  for(int j=0;j<b;j++)
+   {S =S+(A[i][j])*(B[j][l]);}
+   //return j;
+   //return S;
+  }//C[i][j] = S;
+}
+
+puts("C:-");
+for(int i=0;i<a;i++)
+  {
+   for(int l=0;l<b;l++)
+    {printf("%d ",C[i][l]);}
+    printf("\n");
+}
+
+
+}else printf("%d\n",-1); 
+}
