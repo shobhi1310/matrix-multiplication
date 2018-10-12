@@ -15,7 +15,7 @@ if(b==c)
 {
 
 int A[a][b];
-int B[b][d];
+int B[c][d];
 int C[a][d];
 
 for(int i=0;i<a;i++)
@@ -35,10 +35,10 @@ for(int i=0;i<a;i++)
 }
 
 puts("B:-");
-for(int k=0;k<a;k++)
+for(int k=0;k<c;k++)
   {
-   for(int l=0;l<b;l++)
-    {printf("%d ",A[k][l]);}
+   for(int l=0;l<d;l++)
+    {printf("%d ",B[k][l]);}
     printf("\n");
 }
 
@@ -47,9 +47,8 @@ for(int i=0;i<a;i++)
   {int S = 0;
   for(int j=0;j<b;j++)
    {S =S+(A[i][j])*(B[j][l]);}
-   //return j;
-   //return S;
-  }//C[i][j] = S;
+  C[i][l]=S;
+ }
 }
 
 puts("C:-");
