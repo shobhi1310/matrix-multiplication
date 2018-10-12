@@ -26,7 +26,7 @@ for(int k=0;k<c;k++)
 {for(int l=0;l<d;l++)
 {scanf("%d",&B[k][l]); }}
 
-puts("A:-");
+puts("A:-\n\n");
 for(int i=0;i<a;i++)
   {
    for(int j=0;j<b;j++)
@@ -34,7 +34,7 @@ for(int i=0;i<a;i++)
     printf("\n");
 }
 
-puts("B:-");
+puts("B:-\n\n");
 for(int k=0;k<c;k++)
   {
    for(int l=0;l<d;l++)
@@ -51,10 +51,10 @@ for(int i=0;i<a;i++)
  }
 }
 
-puts("C:-");
+puts("C:-\n\n");
 for(int i=0;i<a;i++)
   {
-   for(int l=0;l<b;l++)
+   for(int l=0;l<d;l++)
     {printf("%d ",C[i][l]);}
     printf("\n");
 }
